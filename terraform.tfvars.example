@@ -1,0 +1,8 @@
+# set gh_token or `export GITHUB_TOKEN=` and comment token in provider
+gh_token = "your_token"
+
+gh_org = "Some-GitHub-Org"
+
+gh_admins = []
+
+gh_users = []
