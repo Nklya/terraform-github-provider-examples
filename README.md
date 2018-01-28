@@ -1,4 +1,4 @@
-# [Terraform provider GitHub examples](https://www.terraform.io/docs/providers/github/index.html)
+# [Terraform GitHub provider examples](https://www.terraform.io/docs/providers/github/index.html)
 
 This repository is an example of using Terraform provider for GitHub. It does:
 
