@@ -1,24 +1,23 @@
 # [Terraform GitHub provider examples](https://www.terraform.io/docs/providers/github/index.html)
 
-[In Russian](README_ru.md)
+[In English](README.md)
 
-This repository is an example of using Terraform provider for GitHub. It does:
+Пример использования Terraform с провайдеровм для GitHub. Он реализует:
 
-* create two teams in organization (admins and users)
-* invite people from variables into teams
-* create personal repos for users
-* enable branch protection so they cannot push to master without review
-* add labels to user repos
+* создает две команды (admins и users)
+* приглашает пользователей из списков в организации
+* создает персональные репозитории для пользователей
+* включает защиту мастер бранча для запрета коммита без код ревью
+* добавляет метки к репозиториям
 
-## How to use
+## Как использовать
 
-* Install Terraform (0.10 or newer)
-* Copy terraform.tfvars.example to terraform.tfvars
-* Fill values in terraform.tfvars. See description below
-* Run `terraform init` and then `terraform apply`
-* After that you can add new users and run apply again
+* Установите Terraform (0.10 or newer)
+* Скопируйте terraform.tfvars.example to terraform.tfvars
+* Заполните значения в terraform.tfvars. См. описание ниже
+* Выполните `terraform init` а затем `terraform apply`
 
-## Parameters
+## Параметры
 
 ### main.tf
 
@@ -34,7 +33,7 @@ This repository is an example of using Terraform provider for GitHub. It does:
 
 ### terraform.tfvars
 
-You need to fill these variables:
+Нужно заполнить следующие переменные:
 
 * `gh_token` - token with admin rights to create repo, manage users in team and delete repos
 * `gh_org` - name of organization

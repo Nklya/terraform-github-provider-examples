@@ -7,21 +7,34 @@ variable "gh_org" {
 }
 
 variable "gh_admins" {
-  type    = "list"
-  default = []
+  description = "List with admin users in GitHub Organization"
+  type        = "list"
+  default     = []
 }
 
 variable "gh_users" {
-  type    = "list"
-  default = []
+  description = "List with limited users in GitHub Organization"
+  type        = "list"
+  default     = []
 }
 
 variable "gh_labels" {
-  type    = "list"
-  default = ["SomeTopic", "OtherTopic", "_⭐_"]
+  description = "List with labels for each repo"
+  type        = "list"
+  default     = ["SomeTopic", "OtherTopic", "_⭐_"]
 }
 
 variable "gh_task_count" {
   description = "Tasks count"
   default     = 10
+}
+
+variable "gh_color_labels" {
+  description = "Labels color"
+  default     = "00CCCC"
+}
+
+variable "gh_color_tasks" {
+  description = "Task labels color"
+  default     = "CC6600"
 }
