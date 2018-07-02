@@ -38,3 +38,8 @@ variable "gh_color_tasks" {
   description = "Task labels color"
   default     = "CC6600"
 }
+
+variable "gh_labels_enable" {
+  description = "Enable labels"
+  default     = 1
+}
