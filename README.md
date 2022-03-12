@@ -1,7 +1,5 @@
 # [Terraform GitHub provider examples](https://www.terraform.io/docs/providers/github/index.html)
 
-[In Russian](README_ru.md)
-
 This repository is an example of using Terraform provider for GitHub. It does:
 
 * create two teams in organization (admins and users)
@@ -30,7 +28,6 @@ This repository is an example of using Terraform provider for GitHub. It does:
 * `resource "github_branch_protection" "users_repos"` - enable branch protection for user repos
 * `resource "github_repository_collaborator" "users_repos"` - add users as collaborators to their repos
 * `resource "github_issue_label" "users_repos"` - create labels from list and with count
-
 
 ### terraform.tfvars
 
